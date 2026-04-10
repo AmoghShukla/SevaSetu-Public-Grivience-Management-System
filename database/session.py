@@ -12,8 +12,8 @@ engine = create_engine(DATABASE_URL)
 Sessionlocal = sessionmaker(bind=engine)
 
 def get_db():
-    db = Sess
+    db = Sessionlocal()
     try:
         yield db
     finally:
-        db.
+        db.close()
