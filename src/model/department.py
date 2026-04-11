@@ -1,4 +1,4 @@
-from database.base import Base
+from src.database.base import Base
 from sqlalchemy import column
 
 class Department_class(Base):
