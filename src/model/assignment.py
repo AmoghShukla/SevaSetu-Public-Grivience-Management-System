@@ -10,5 +10,4 @@ class Assignment_Class(Base):
     officer_id = column(Integer, ForeignKey('User.user_id'), nullable=False)
     assigned_by = column(Integer, ForeignKey('User.uder_id'), nullable=False)
     assigned_at = column(DateTime, default = DateTime.now)
-    current_status = 
 
