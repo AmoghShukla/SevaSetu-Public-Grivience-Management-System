@@ -10,7 +10,10 @@ def get_logger(name):
             os.mkdir('src/logs')
 
         formatter = logging.Formatter('  %(asctimes)s | %(levelname)s | %(name)s | %(message)s')
-        
+
+        ConsoleHandler = logging.StreamHandler()
+        ConsoleHandler.setFormatter(formatter)
+
 
             
     
