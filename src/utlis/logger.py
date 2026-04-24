@@ -9,5 +9,8 @@ def get_logger(name):
         if not os.path.exists('src/logs'):
             os.mkdir('src/logs')
 
+        formatter = logging.Formatter('  %(asctimes)s | %(levelname)s | %(name)s | %(message)s')
+        
+
             
     
