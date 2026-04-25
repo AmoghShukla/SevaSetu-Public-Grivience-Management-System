@@ -19,3 +19,5 @@ def get_logger(name):
 
         logger.addHandler(ConsoleHandler)
         logger.addHandler(FileHandler)
+    
+    return logger
