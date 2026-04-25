@@ -17,6 +17,4 @@ def get_logger(name):
         FileHandler = logging.FileHandler()
         FileHandler.setFormatter(formatter)
 
-
-            
-    
+        logger.addHandler(ConsoleHandler)
