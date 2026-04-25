@@ -18,3 +18,4 @@ def get_logger(name):
         FileHandler.setFormatter(formatter)
 
         logger.addHandler(ConsoleHandler)
+        logger.addHandler(FileHandler)
