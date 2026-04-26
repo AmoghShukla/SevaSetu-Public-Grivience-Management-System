@@ -14,8 +14,8 @@ class User_Class(Base):
     user_pincode = column(Integer, nullable=False)
     user_department_id = column(Integer, ForeignKey('Department.department_id'), nullable=False)
 
-    department = relationship("Department_Class", back_populates="user")
-    grivience = relationship("Grivience_Class", back_populates="user")
-    feedback = relationship("Feedback_Class", back_populates="user")
-    assignment = relationship("Assignment_Class", back_populates='officer', foreign_keys="Assignment.officer_id")
+    # department = relationship("Department_Class", back_populates="user")
+    # grivience = relationship("Grivience_Class", back_populates="user")
+    # feedback = relationship("Feedback_Class", back_populates="user")
+    # assignment = relationship("Assignment_Class", back_populates='officer', foreign_keys="Assignment.officer_id")
     
