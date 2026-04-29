@@ -5,5 +5,9 @@ from src.model.grivience import Grivience_Class
 from src.model.user import User_Class
 
 __all__ = [
-    Assignment_Class
+    Assignment_Class,
+    Department_class,
+    Feedback_class,
+    Grivience_Class,
+    User_Class
 ]
