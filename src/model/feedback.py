@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Relationship
 
 from src.database.base import Base
-from sqlalchemy import UUID, ForeignKey, String, column
+from sqlalchemy import UUID, ForeignKey, Integer, String, column
 
 class Feedback_Class(Base):
     __tablename__="Feedback_Table"
@@ -9,6 +9,7 @@ class Feedback_Class(Base):
     feedback_id = column(UUID(as_uuid=True), primary_key = True, index = True)
     grivience_id = column(UUID(as_uuid=True), ForeignKey('Grivience_Table.grivience_id'))
     feedback_message = column(String, nullable=False)
+    work_rating = column(Integer, nullable=False)
 
     grivience = Relationship('Grivience_Class', back_populates='feedback')
 
