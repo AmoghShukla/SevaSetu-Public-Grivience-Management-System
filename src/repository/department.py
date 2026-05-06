@@ -1,5 +1,5 @@
 class DepartmentRepository:
 
     @staticmethod
-    def create_Department():
+    def Create_Department():
         pass
