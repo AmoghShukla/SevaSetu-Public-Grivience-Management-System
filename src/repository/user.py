@@ -13,3 +13,6 @@ class UserRepository:
 
     def Soft_Delete_User():
         pass
+
+    def Hard_Delete_User():
+        pass
