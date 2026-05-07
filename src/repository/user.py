@@ -10,3 +10,6 @@ class UserRepository:
 
     def Update_User():
         pass
+
+    def Soft_Delete_User():
+        pass
