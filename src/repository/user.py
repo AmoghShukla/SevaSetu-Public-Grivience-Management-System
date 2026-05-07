@@ -7,3 +7,6 @@ class UserRepository:
     @staticmethod
     def Get_User_By_ID():
         pass
+
+    def Update_User():
+        pass
