@@ -6,8 +6,8 @@ def get_logger(name):
     logger.setLevel(level=logging.INFO)
 
     if not logger.hasHandlers():
-        if not os.path.exists('src/logs'):
-            os.mkdir('src/logs')
+        if not os.path.exists('src/logs/app/log'):
+            os.makedirs('src/logs/app.log')
 
         formatter = logging.Formatter('  %(asctimes)s | %(levelname)s | %(name)s | %(message)s')
 
