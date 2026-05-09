@@ -1,4 +1,8 @@
+from sqlalchemy import select
 from sqlalchemy.exc import SQLAlchemyError
+
+from src.exception import CustomException
+from src.model.user import User_Class
 
 
 class UserRepository:
@@ -8,7 +12,7 @@ class UserRepository:
         pass
 
     @staticmethod
-    def Get_User_By_ID():
+    def Get_User_By_ID(user_id, db):
         try:
             return db.execute(
                 select(User_Class).
