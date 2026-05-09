@@ -32,12 +32,12 @@ class FeedbackRepository:
         pass
 
     @staticmethod
-    def Hard_Delete_Feedback(user, db):
+    def Hard_Delete_Feedback(feedback, db):
         try:
-            db.delete(user)
+            db.delete(feedback)
             db.commit()
             return {
-                'message' : 'User Deleted!!!'
+                'message' : 'Feedback Deleted!!!'
             }
         except SQLAlchemyError as e:
             raise CustomException.RepositoryError(e) from e
