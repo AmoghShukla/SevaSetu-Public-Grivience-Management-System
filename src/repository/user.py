@@ -32,5 +32,12 @@ class UserRepository:
         pass
 
     @staticmethod
-    def Hard_Delete_User():
-        pass
+    def Hard_Delete_User(user, db):
+        try:
+            db.delete(user)
+            db.commit()
+            return {
+                'message' : 'User Deleted!!!'
+            }
+        except SQLAlchemyError as e:
+            raise CustomException.RepositoryError(e) from e
