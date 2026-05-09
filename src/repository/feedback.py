@@ -21,7 +21,7 @@ class FeedbackRepository:
                 .first()
                 )
         except SQLAlchemyError as e:
-            raise CustomException.RepositoryError("Error While Fetching user by id")
+            raise CustomException.RepositoryError("Error While Fetching Feedback by id")
 
     @staticmethod
     def Update_Feedback():
