@@ -8,6 +8,10 @@ class DepartmentRepository:
     @staticmethod
     def Create_Department():
         pass
+
+    @staticmethod
+    def Update_Department():
+        pass
     
     @staticmethod
     def Soft_Delete_Department():
