@@ -3,7 +3,7 @@
 **SevaSetu** is a centralized, system-driven platform designed to streamline the lifecycle of public grievance handling from complaint registration to resolution tracking.
 It replaces manual, inefficient workflows with a structured, scalable, and transparent digital system.
 
-This is not just a CRUD-based complaint system — it is a **workflow-driven governance solution** built with backend design principles and real-world operational thinking.
+This is not just a CRUD-based complaint system, it is a **workflow-driven governance solution** built with backend design principles and real-world operational thinking.
 
 ---
 
