@@ -10,6 +10,10 @@ class DepartmentRepository:
         pass
     
     @staticmethod
+    def Soft_Delete_Department():
+        pass
+
+    @staticmethod
     def Hard_Delete_Department(department, db):
         try:
             db.delete(department)
