@@ -9,5 +9,5 @@ class GrivienceRepository:
         pass
 
     @staticmethod
-    def Delete_Grivience():
+    def Hard_Delete_Grivience():
         pass
