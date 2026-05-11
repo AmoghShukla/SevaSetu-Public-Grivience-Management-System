@@ -7,3 +7,7 @@ class GrivienceRepository:
     @staticmethod
     def Get_Grivience_By_ID():
         pass
+
+    @staticmethod
+    def Delete_Grivience():
+        pass
